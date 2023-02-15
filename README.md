@@ -1,23 +1,22 @@
-# Task Master
+# Kubernetes based Continuous Delivery
 
-This repo is the source code for IDS721-Project1-Cloud Continuous Delivery of Microservice.
+This repo is the source code for IDS721-Project2-Kubernetes based Continuous Delivery.
 
 ## Target
-- Create a Microservice in Flask or Fast API
-- Push source code to Github
-- Configure Build System to Deploy changes
-- Use IaC (Infrastructure as Code) to deploy code
-- Use either AWS, Azure, GCP (recommended services include Google App Engine, AWS App Runner or Azure App Services)
-- Containerization is optional, but recommended
+- Create a customized Docker container from the current version of Python that deploys a simple python script.
+- Push image to DockerHub, or Cloud based Container Registery (ECR)
+- Project should deploy automatically to Kubernetes cluster
+- Deployment should be to some form of Kubernetes service (can be hosted like Google Cloud Run or Amazon EKS, etc)
 
 ## Finished
 - A simple flask web app has been completed.
-- Configured continuous run through github actions
-- Dockerize application using Docker and Github Action
+- Dockerize application using Docker and push image to DockerHub
+- Pull it onto AWS Cloud 9
 
 ## TODO
-- Use IaC to deploy code
-- Deploy to AWS
+- Extend and push to Amazon ECR
+- Pull onto new AWS Cloud 9 environment via ECR
+- Pull into Amazon EKS
 
 ## How To Run
 1. Install `virtualenv`:
